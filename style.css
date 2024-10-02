@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    position:relative;
+   /* background-color: gray; */
+}
+.logo{
+    color:orange;
+}
+
+.nav-bar{
+    border-bottom: 1px solid grey;
+    height:70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    background-color: lightgray;
+    opacity: 0.5;
+}
+a{
+    font-size: 2vw;
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+
+.nav-cont{
+    display:flex;
+    gap:4vw;
+    flex-wrap: nowrap;
+}
+.nav-bar i{
+    font-size: 1.6vw;
+    font-weight: 800;
+    display: none;
+}
+
+.content{
+    height: calc(100% - 70px);
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.left{
+    height: 100%;
+    width: 50%;
+    padding: 5vw 3vw;
+}
+.left h2{
+    font-size: 4vw;
+}
+ .left h2 span{
+    color: lightgreen;
+    font-weight: 900;
+}
+.left p{
+    font-size: 2vw;
+    line-height: 2.5vw;
+}
+.left .butt{
+    display: flex;
+    gap: 3vw;
+}
+.left button{
+    font-size: 2vw;
+    margin-top: 2vw;
+    padding: 1vw 2vw;
+    border: none;
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+.right{
+    height: 100%;
+    width:50%;
+}
+.right img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+@media (max-width:600px) {
+    .nav-bar{
+        background-color: lightseagreen;
+        color: white;
+    }
+    h1{
+        font-size: 6vw;
+    }
+    a{
+        font-size: 4vw;
+    }
+    .nav-cont a{
+        font-size: 4vw;
+        display: none;
+    }
+    .nav-cont i{
+        display: block;
+        font-size: 6vw;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width:100%;
+        height: 60%;
+    }
+    .right{
+        width:100%;
+        height: 40%;
+    }
+    .content .left h2{
+         font-size: 8vw;
+    }
+    .left p{
+        font-size: 5vw;
+        line-height: 6vw;
+    }
+    .left .butt{
+        margin-top: 4vw;
+        font-size: 10vw;
+        padding: 5vw 9vw;
+    }
+}
